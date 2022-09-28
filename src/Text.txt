@@ -1,0 +1,43 @@
+Everything I have to say or almost in my Portfolio.
+
+Fonts
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Source+Code+Pro:wght@400;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+Skills & Tools
+
+HTML
+CSS
+JavaScript
+ReactJS
+Bootstrap
+Figma
+GitHub
+VSCode
+
+Currently learning WordPress to add some CMS knowledge to my Stack.
+
+
+About Me
+
+Bonjour-Hi, I'm Isabelle Vallerand
+Front-End Web Developer based out of Mtl, Canada
+I am from Quebec city and moved to Montreal a few years ago. I come from a Fashion Design background but I became interested in IT quickly. Over the past 10 years, I've worked as a Support Analyst therefore problem-solving skills is in my DNA.
+
+Last year I decided to learn to code as a career change and found out that coding is what I love to do. I've enrolled in an intensive 9-weeks Full-Stack Web Development Bootcamp @ Le Wagon Montreal which I graduated in March 2022. The Front-End is where I like to challenge myself and create through code.
+
+I am also a cat mom.
+
+You can connect with me via social links.
+
+
+Theme
+
+  body:"#F1EADC", (pièce de musée)
+  bodyRgba : "241, 234, 220",
+  fontFamily:"'Source Code Pro', sans-serif",
+  text:"#090909",
+  textRgba:"9,9,9",
