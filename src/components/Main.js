@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
+import img from "../assets/img/logo.png";
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.text};
@@ -35,7 +36,7 @@ const Contact = styled.a`
   z-index: 1;
 `;
 
-const RESUME = styled.a`
+const TROOPL = styled.a`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
   top: 50%;
@@ -45,7 +46,7 @@ const RESUME = styled.a`
   z-index: 1;
 `;
 
-const PROJECTS = styled.a`
+const PROJECTS = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   left: calc(1rem + 2vw);
   position: absolute;
@@ -70,6 +71,7 @@ const ABOUT = styled(NavLink)`
   text-decoration: none;
   z-index: 1;
 `;
+
 const SKILLS = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   text-decoration: none;
@@ -94,6 +96,12 @@ const Center = styled.button`
     padding-top: 1rem;
   }
   transform: translate(-50%, -50%);
+`;
+
+const LogoCenter = styled.img`
+  background-image: url({img});
+  height: 70%;
+  width: 70%;
 `;
 
 const DarkDiv = styled.div`
@@ -122,15 +130,17 @@ const Main = () => {
           <LogoComponent theme={click ? "dark" : "light"} />
           <SocialIcons theme={click ? "dark" : "light"} />
           <Center click={click}>
-            <LogoComponent
+            <LogoCenter
               onClick={() => handleClick()}
               width={click ? 120 : 200}
               height={click ? 120 : 200}
               fill="currentColor"
+              style={{ color: "inherit" }}
+              rel="noreferrer"
+              img
+              src={img}
             />
-            <h3>
-              <span>Click Here!</span>
-            </h3>
+            <h3>Click Here!</h3>
           </Center>
           <Contact
             style={{ color: "inherit" }}
@@ -140,14 +150,14 @@ const Main = () => {
           >
             <h3>Say Bonjour-Hi...</h3>
           </Contact>
-          <RESUME
+          <TROOPL
             style={{ color: "inherit" }}
             target="_blank"
             rel="noreferrer"
-            href=""
+            href="https://troopl.com/isabellevallerand"
           >
-            <h3>RESUME.</h3>
-          </RESUME>
+            <h3>TROOPL.</h3>
+          </TROOPL>
           <PROJECTS
             style={{ color: "inherit" }}
             target="_blank"

@@ -19,12 +19,12 @@ const Icons = styled.div`
 
 const Line = styled.span`
   background-color: ${(props) =>
-    props.color === "light" ? LightTheme.text : LightTheme.body};
+    props.color === "dark" ? LightTheme.text : LightTheme.body};
   height: 10rem;
   width: 2px;
 `;
 
-const SocialIcons = () => {
+const SocialIcons = (props) => {
   return (
     <Icons>
       <div>
@@ -34,7 +34,11 @@ const SocialIcons = () => {
           rel="noreferrer"
           href="https://linkedin.com/in/isabelle-vallerand"
         >
-          <LinkedIn height={30} width={30} fill="currentColor" />
+          <LinkedIn
+            height={30}
+            width={30}
+            fill={props.theme === "dark" ? LightTheme.text : LightTheme.body}
+          />
         </a>
       </div>
       <div>
@@ -44,7 +48,11 @@ const SocialIcons = () => {
           rel="noreferrer"
           href="https://github.com/Cyme101"
         >
-          <GitHub height={30} width={30} fill="currentColor" />
+          <GitHub
+            height={30}
+            width={30}
+            fill={props.theme === "dark" ? LightTheme.text : LightTheme.body}
+          />
         </a>
       </div>
       <div>
@@ -54,10 +62,14 @@ const SocialIcons = () => {
           rel="noreferrer"
           href="https://twitter.com/IzabelVall"
         >
-          <Twitter height={30} width={30} fill="currentColor" />
+          <Twitter
+            height={30}
+            width={30}
+            fill={props.theme === "dark" ? LightTheme.text : LightTheme.body}
+          />
         </a>
       </div>
-      <Line />
+      <Line color={props.theme} />
     </Icons>
   );
 };
