@@ -19,7 +19,7 @@ const Icons = styled.div`
 
 const Line = styled.span`
   background-color: ${(props) =>
-    props.color === "dark" ? LightTheme.text : LightTheme.body};
+    props.color === "light" ? LightTheme.text : LightTheme.body};
   height: 10rem;
   width: 2px;
 `;
@@ -37,7 +37,7 @@ const SocialIcons = (props) => {
           <LinkedIn
             height={30}
             width={30}
-            fill={props.theme === "dark" ? LightTheme.text : LightTheme.body}
+            fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
           />
         </a>
       </div>
@@ -51,7 +51,7 @@ const SocialIcons = (props) => {
           <GitHub
             height={30}
             width={30}
-            fill={props.theme === "dark" ? LightTheme.text : LightTheme.body}
+            fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
           />
         </a>
       </div>
@@ -65,7 +65,7 @@ const SocialIcons = (props) => {
           <Twitter
             height={30}
             width={30}
-            fill={props.theme === "dark" ? LightTheme.text : LightTheme.body}
+            fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
           />
         </a>
       </div>

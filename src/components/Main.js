@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import img from "../assets/img/logo.png";
 
 const MainContainer = styled.div`
-  background: ${(props) => props.theme.text};
+  background: ${(props) => props.theme.body};
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -73,7 +72,7 @@ const ABOUT = styled(NavLink)`
 `;
 
 const SKILLS = styled(NavLink)`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  color: ${(props) => props.theme.text};
   text-decoration: none;
   z-index: 1;
 `;
@@ -127,14 +126,12 @@ const Main = () => {
         <DarkDiv click={click} />
         <Container>
           <PowerButton />
-          <LogoComponent theme={click ? "dark" : "light"} />
           <SocialIcons theme={click ? "dark" : "light"} />
           <Center click={click}>
             <LogoCenter
               onClick={() => handleClick()}
               width={click ? 120 : 200}
               height={click ? 120 : 200}
-              fill="currentColor"
               style={{ color: "inherit" }}
               rel="noreferrer"
               img
