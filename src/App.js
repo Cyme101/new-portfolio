@@ -5,9 +5,9 @@ import { LightTheme } from "./components/Themes";
 
 import Main from "./components/Main";
 import AboutMePage from "./components/AboutMePage";
-import ResumePage from "./components/MySkillsPage";
 import MySkillsPage from "./components/MySkillsPage";
 import ProjectsPage from "./components/ProjectsPage";
+import Audio from "./subComponents/Audio";
 
 function App() {
   const location = useLocation();
@@ -16,10 +16,10 @@ function App() {
     <>
       <GlobalStyle />
       <ThemeProvider theme={LightTheme}>
+        <Audio />
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<AboutMePage />} />
-          <Route path="/resume" element={<ResumePage />} />
           <Route path="/skills" element={<MySkillsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
