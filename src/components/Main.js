@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import img from "../assets/img/logo.png";
+import Intro from "./Intro";
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -36,12 +37,12 @@ const Contact = styled.a`
 `;
 
 const TROOPL = styled.a`
-  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+  color: ${(props) => props.theme.text};
   position: absolute;
-  top: 50%;
   right: calc(1rem + 2vw);
-  transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
   z-index: 1;
 `;
 
@@ -99,8 +100,8 @@ const Center = styled.button`
 
 const LogoCenter = styled.img`
   background-image: url({img});
-  height: 70%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
 `;
 
 const DarkDiv = styled.div`
@@ -137,7 +138,7 @@ const Main = () => {
               img
               src={img}
             />
-            <h3>Click Here!</h3>
+            <h2>Click Here!</h2>
           </Center>
           <Contact
             style={{ color: "inherit" }}
@@ -145,7 +146,7 @@ const Main = () => {
             rel="noreferrer"
             href="mailto:isabelle.vall@gmail.com"
           >
-            <h3>Say Bonjour-Hi...</h3>
+            <h2>Say Bonjour-Hi</h2>
           </Contact>
           <TROOPL
             style={{ color: "inherit" }}
@@ -153,7 +154,7 @@ const Main = () => {
             rel="noreferrer"
             href="https://troopl.com/isabellevallerand"
           >
-            <h3>TROOPL.</h3>
+            <h2>TROOPL.</h2>
           </TROOPL>
           <PROJECTS
             style={{ color: "inherit" }}
@@ -162,7 +163,7 @@ const Main = () => {
             to="/projects"
             click={+click}
           >
-            <h3>PROJECTS.</h3>
+            <h2>PROJECTS.</h2>
           </PROJECTS>
           <BottomBar>
             <ABOUT
@@ -172,7 +173,7 @@ const Main = () => {
               to="/about"
               click={+click}
             >
-              <h3>ABOUT ME.</h3>
+              <h2>ABOUT ME.</h2>
             </ABOUT>
             <SKILLS
               style={{ color: "inherit" }}
@@ -181,10 +182,11 @@ const Main = () => {
               to="/skills"
               click={+click}
             >
-              <h3>MY SKILLS.</h3>
+              <h2>MY SKILLS.</h2>
             </SKILLS>
           </BottomBar>
         </Container>
+        {click ? <Intro click={click} /> : null}
       </MainContainer>
     </div>
   );

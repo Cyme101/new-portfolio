@@ -5,14 +5,14 @@ const ProjectsData = [
     description:
       "This is the final project @ Le Wagon Montreal, it has been built in 2 weeks with Ruby, HTML, SCSS, Javascript, Bootstrap, Ruby on Rails, Cloudinary, PostgreSQL, Heroku and it was designed in Figma.",
     tags: [
-      "ruby",
+      "Ruby",
       "HTML",
       "SCSS",
-      "javascript",
+      "Javascript",
       "Boostrap",
-      "ruby on rails",
+      "Ruby on rails",
       "Cloudinary",
-      "postgreSQL",
+      "PostgreSQL",
     ],
     demo: "http://www.seamify.ca",
     github: "https://github.com/Cyme101/seamify",
@@ -23,14 +23,14 @@ const ProjectsData = [
     description:
       "This is the airbnb clone project @ Le Wagon Montreal, it has been built in 1 week with Ruby, HTML, SCSS, Javascript, Bootstrap, Ruby on Rails, Cloudinary, PostgreSQL, Heroku and it was designed in Figma.",
     tags: [
-      "ruby",
+      "Ruby",
       "HTML",
       "SCSS",
-      "javascript",
+      "Javascript",
       "Boostrap",
-      "ruby on rails",
+      "Ruby on Rails",
       "Cloudinary",
-      "postgreSQL",
+      "PostgreSQL",
     ],
     demo: "https://zoo4u.herokuapp.com/",
     github: "https://github.com/Cyme101/zoo4u",
@@ -48,10 +48,10 @@ const ProjectsData = [
     name: "tHE/vOID",
     description:
       "This is my second project with ReactJS with styled-components.",
-    tags: ["reactjs", "styled-components"],
+    tags: ["ReactJS", "styled-components"],
     demo: "",
     github: "https://github.com/Cyme101/thevoid",
   },
 ];
 
-export default ProjectsData
+export default ProjectsData;

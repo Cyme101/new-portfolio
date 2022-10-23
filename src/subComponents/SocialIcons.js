@@ -20,7 +20,7 @@ const Icons = styled.div`
 const Line = styled.span`
   background-color: ${(props) =>
     props.color === "light" ? LightTheme.text : LightTheme.body};
-  height: 10rem;
+  height: 9rem;
   width: 2px;
 `;
 
