@@ -32,6 +32,7 @@ const Main = styled.div`
   padding: 3rem;
   width: 30vw;
   z-index: 3;
+
   &:hover {
     color: ${(props) => props.theme.body};
     background-color: ${(props) => props.theme.text};

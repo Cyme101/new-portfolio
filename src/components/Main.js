@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import PowerButton from "../subComponents/PowerButton";
@@ -36,13 +37,13 @@ const Contact = styled.a`
   z-index: 1;
 `;
 
-const TROOPL = styled.a`
-  color: ${(props) => props.theme.text};
+const TROOPL = styled(NavLink)`
+  ccolor: ${(props) => props.theme.text};
   position: absolute;
-  right: calc(1rem + 2vw);
-  text-decoration: none;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
+  right: calc(1rem + 2vw);
+  transform: rotate(90deg) translate(-50%, -50%);
+  text-decoration: none;
   z-index: 1;
 `;
 
@@ -146,7 +147,20 @@ const Main = () => {
             rel="noreferrer"
             href="mailto:isabelle.vall@gmail.com"
           >
-            <h2>Say Bonjour-Hi</h2>
+            <motion.h3
+              initial={{
+                y: -200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <h3>Say Bonjour-Hi</h3>
+            </motion.h3>
           </Contact>
           <TROOPL
             style={{ color: "inherit" }}
@@ -154,7 +168,20 @@ const Main = () => {
             rel="noreferrer"
             href="https://troopl.com/isabellevallerand"
           >
-            <h2>TROOPL.</h2>
+            <motion.h3
+              initial={{
+                y: -200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <h3>TROOPL.</h3>
+            </motion.h3>
           </TROOPL>
           <PROJECTS
             style={{ color: "inherit" }}
@@ -163,7 +190,20 @@ const Main = () => {
             to="/projects"
             click={+click}
           >
-            <h2>PROJECTS.</h2>
+            <motion.h3
+              initial={{
+                y: -200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <h3>PROJECTS.</h3>
+            </motion.h3>
           </PROJECTS>
           <BottomBar>
             <ABOUT
@@ -173,7 +213,20 @@ const Main = () => {
               to="/about"
               click={+click}
             >
-              <h2>ABOUT ME.</h2>
+              <motion.h3
+                initial={{
+                  y: 200,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                animate={{
+                  y: 0,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <h3>ABOUT ME.</h3>
+              </motion.h3>
             </ABOUT>
             <SKILLS
               style={{ color: "inherit" }}
@@ -182,7 +235,20 @@ const Main = () => {
               to="/skills"
               click={+click}
             >
-              <h2>MY SKILLS.</h2>
+              <motion.h3
+                initial={{
+                  y: 200,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                animate={{
+                  y: 0,
+                  transition: { type: "spring", duration: 1.5, delay: 1 },
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <h3>MY SKILLS.</h3>
+              </motion.h3>
             </SKILLS>
           </BottomBar>
         </Container>

@@ -1,17 +1,16 @@
-const ProjectsData = [
+export const Projects = [
   {
     id: 1,
     name: "Seamify",
     description:
-      "This is the final project @ Le Wagon Montreal, it has been built in 2 weeks with Ruby, HTML, SCSS, Javascript, Bootstrap, Ruby on Rails, Cloudinary, PostgreSQL, Heroku and it was designed in Figma.",
+      "This is the final project @ Le Wagon, it has been built in 2 weeks.",
     tags: [
       "Ruby",
       "HTML",
       "SCSS",
       "Javascript",
       "Boostrap",
-      "Ruby on rails",
-      "Cloudinary",
+      "Ruby on Rails",
       "PostgreSQL",
     ],
     demo: "http://www.seamify.ca",
@@ -21,7 +20,7 @@ const ProjectsData = [
     id: 2,
     name: "Zoo4U",
     description:
-      "This is the airbnb clone project @ Le Wagon Montreal, it has been built in 1 week with Ruby, HTML, SCSS, Javascript, Bootstrap, Ruby on Rails, Cloudinary, PostgreSQL, Heroku and it was designed in Figma.",
+      "This is the Airbnb clone project @ Le Wagon, it has been built in 1 week.",
     tags: [
       "Ruby",
       "HTML",
@@ -29,7 +28,6 @@ const ProjectsData = [
       "Javascript",
       "Boostrap",
       "Ruby on Rails",
-      "Cloudinary",
       "PostgreSQL",
     ],
     demo: "https://zoo4u.herokuapp.com/",
@@ -40,7 +38,7 @@ const ProjectsData = [
     name: "The Famous Food App",
     description: "This is my first project with ReactJS with module CSS.",
     tags: ["reactjs", "redux", "CSS"],
-    demo: "",
+    demo: "https://github.com/Cyme101/the-famous-food-app",
     github: "https://github.com/Cyme101/the-famous-food-app",
   },
   {
@@ -49,9 +47,7 @@ const ProjectsData = [
     description:
       "This is my second project with ReactJS with styled-components.",
     tags: ["ReactJS", "styled-components"],
-    demo: "",
+    demo: "https://github.com/Cyme101/thevoid",
     github: "https://github.com/Cyme101/thevoid",
   },
 ];
-
-export default ProjectsData;
