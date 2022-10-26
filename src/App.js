@@ -8,23 +8,26 @@ import AboutMePage from "./components/AboutMePage";
 import MySkillsPage from "./components/MySkillsPage";
 import ProjectsPage from "./components/ProjectsPage";
 import Audio from "./subComponents/Audio";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
 
   return (
-    <>
+    <div>
       <GlobalStyle />
       <ThemeProvider theme={LightTheme}>
         <Audio />
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Main />} />
-          <Route path="/about" element={<AboutMePage />} />
-          <Route path="/skills" element={<MySkillsPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Main />} />
+            <Route path="/about" element={<AboutMePage />} />
+            <Route path="/skills" element={<MySkillsPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+          </Routes>
+        </AnimatePresence>
       </ThemeProvider>
-    </>
+    </div>
   );
 }
 

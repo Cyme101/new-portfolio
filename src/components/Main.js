@@ -37,7 +37,7 @@ const Contact = styled.a`
   z-index: 1;
 `;
 
-const TROOPL = styled(NavLink)`
+const TROOPL = styled.a`
   ccolor: ${(props) => props.theme.text};
   position: absolute;
   top: 50%;
@@ -139,7 +139,7 @@ const Main = () => {
               img
               src={img}
             />
-            <h2>Click Here!</h2>
+            <span>Click Here!</span>
           </Center>
           <Contact
             style={{ color: "inherit" }}
@@ -147,7 +147,7 @@ const Main = () => {
             rel="noreferrer"
             href="mailto:isabelle.vall@gmail.com"
           >
-            <motion.h3
+            <motion.h2
               initial={{
                 y: -200,
                 transition: { type: "spring", duration: 1.5, delay: 1 },
@@ -159,8 +159,8 @@ const Main = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <h3>Say Bonjour-Hi</h3>
-            </motion.h3>
+              Say Bonjour-Hi
+            </motion.h2>
           </Contact>
           <TROOPL
             style={{ color: "inherit" }}
@@ -168,7 +168,7 @@ const Main = () => {
             rel="noreferrer"
             href="https://troopl.com/isabellevallerand"
           >
-            <motion.h3
+            <motion.h2
               initial={{
                 y: -200,
                 transition: { type: "spring", duration: 1.5, delay: 1 },
@@ -180,17 +180,11 @@ const Main = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <h3>TROOPL.</h3>
-            </motion.h3>
+              TROOPL.
+            </motion.h2>
           </TROOPL>
-          <PROJECTS
-            style={{ color: "inherit" }}
-            target="_blank"
-            rel="noreferrer"
-            to="/projects"
-            click={+click}
-          >
-            <motion.h3
+          <PROJECTS to="/projects" click={+click}>
+            <motion.h2
               initial={{
                 y: -200,
                 transition: { type: "spring", duration: 1.5, delay: 1 },
@@ -202,18 +196,12 @@ const Main = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <h3>PROJECTS.</h3>
-            </motion.h3>
+              PROJECTS.
+            </motion.h2>
           </PROJECTS>
           <BottomBar>
-            <ABOUT
-              style={{ color: "inherit" }}
-              target="_blank"
-              rel="noreferrer"
-              to="/about"
-              click={+click}
-            >
-              <motion.h3
+            <ABOUT to="/about" click={+click}>
+              <motion.h2
                 initial={{
                   y: 200,
                   transition: { type: "spring", duration: 1.5, delay: 1 },
@@ -225,17 +213,11 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <h3>ABOUT ME.</h3>
-              </motion.h3>
+                ABOUT ME.
+              </motion.h2>
             </ABOUT>
-            <SKILLS
-              style={{ color: "inherit" }}
-              target="_blank"
-              rel="noreferrer"
-              to="/skills"
-              click={+click}
-            >
-              <motion.h3
+            <SKILLS to="/skills" click={+click}>
+              <motion.h2
                 initial={{
                   y: 200,
                   transition: { type: "spring", duration: 1.5, delay: 1 },
@@ -247,8 +229,8 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <h3>MY SKILLS.</h3>
-              </motion.h3>
+                MY SKILLS.
+              </motion.h2>
             </SKILLS>
           </BottomBar>
         </Container>

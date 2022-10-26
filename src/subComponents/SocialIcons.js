@@ -1,7 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import { LinkedIn, GitHub, Twitter } from "../components/AllSvgs";
-import { LightTheme } from "../components/Themes";
+import { DarkTheme } from "../components/Themes";
 
 const Icons = styled.div`
   align-items: center;
@@ -17,9 +19,9 @@ const Icons = styled.div`
   }
 `;
 
-const Line = styled.span`
+const Line = styled(motion.span)`
   background-color: ${(props) =>
-    props.color === "light" ? LightTheme.text : LightTheme.body};
+    props.color === "dark" ? DarkTheme.text : DarkTheme.body};
   height: 9rem;
   width: 2px;
 `;
@@ -27,49 +29,74 @@ const Line = styled.span`
 const SocialIcons = (props) => {
   return (
     <Icons>
-      <div>
-        <a
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1 }}
+      >
+        <NavLink
           style={{ color: "inherit" }}
           target="_blank"
           rel="noreferrer"
-          href="https://linkedin.com/in/isabelle-vallerand"
+          to={{ pathname: "https://linkedin.com/in/isabelle-vallerand" }}
         >
           <LinkedIn
-            height={30}
-            width={30}
-            fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
+            width={25}
+            height={25}
+            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
-        </a>
-      </div>
-      <div>
-        <a
+        </NavLink>
+      </motion.div>
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.2 }}
+      >
+        <NavLink
           style={{ color: "inherit" }}
           target="_blank"
           rel="noreferrer"
           href="https://github.com/Cyme101"
         >
           <GitHub
-            height={30}
-            width={30}
-            fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
+            width={25}
+            height={25}
+            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
-        </a>
-      </div>
-      <div>
-        <a
+        </NavLink>
+      </motion.div>
+      <motion.div
+        initial={{ transform: "scale(0)" }}
+        animate={{ scale: [0, 1, 1.5, 1] }}
+        transition={{ type: "spring", duration: 1, delay: 1.4 }}
+      >
+        <NavLink
           style={{ color: "inherit" }}
           target="_blank"
           rel="noreferrer"
-          href="https://twitter.com/IzabelVall"
+          to={{ pathname: "https://twitter.com/IzabelVall" }}
         >
           <Twitter
-            height={30}
-            width={30}
-            fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
+            width={25}
+            height={25}
+            fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
-        </a>
-      </div>
-      <Line color={props.theme} />
+        </NavLink>
+      </motion.div>
+      <Line
+        color={props.theme}
+        initial={{
+          height: 0,
+        }}
+        animate={{
+          height: "8rem",
+        }}
+        transition={{
+          type: "spring",
+          duration: 1,
+          delay: 0.8,
+        }}
+      />
     </Icons>
   );
 };
