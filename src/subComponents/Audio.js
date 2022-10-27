@@ -5,9 +5,9 @@ import music from "../assets/audio/HoliznaCC0 - Seasons Change.mp3";
 const Box = styled.div`
   cursor: pointer;
   display: flex;
-  left: 3rem;
+  left: 2rem;
   position: fixed;
-  top: 3rem;
+  top: 2rem;
   z-index: 10;
   & > *:nth-child(1) {
     animation-delay: 0.2s;

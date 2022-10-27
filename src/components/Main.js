@@ -37,23 +37,13 @@ const Contact = styled.a`
   z-index: 1;
 `;
 
-const TROOPL = styled.a`
-  ccolor: ${(props) => props.theme.text};
-  position: absolute;
-  top: 50%;
-  right: calc(1rem + 2vw);
-  transform: rotate(90deg) translate(-50%, -50%);
-  text-decoration: none;
-  z-index: 1;
-`;
-
 const PROJECTS = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
-  left: calc(1rem + 2vw);
+  right: 1rem;
   position: absolute;
   text-decoration: none;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
   z-index: 1;
 `;
 
@@ -162,27 +152,6 @@ const Main = () => {
               Say Bonjour-Hi
             </motion.h2>
           </Contact>
-          <TROOPL
-            style={{ color: "inherit" }}
-            target="_blank"
-            rel="noreferrer"
-            href="https://troopl.com/isabellevallerand"
-          >
-            <motion.h2
-              initial={{
-                y: -200,
-                transition: { type: "spring", duration: 1.5, delay: 1 },
-              }}
-              animate={{
-                y: 0,
-                transition: { type: "spring", duration: 1.5, delay: 1 },
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              TROOPL.
-            </motion.h2>
-          </TROOPL>
           <PROJECTS to="/projects" click={+click}>
             <motion.h2
               initial={{

@@ -21,11 +21,11 @@ const Main = styled.div`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   display: flex;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Ubuntu Mono", sans-serif;
   font-size: calc(0.5rem + 1vw);
   height: 60vh;
   justify-content: center;
-  left: calc(10rem + 6vw);
+  left: calc(4rem + 6vw);
   line-height: 1.2;
   padding: 2rem;
   position: absolute;
@@ -56,8 +56,8 @@ const AboutMePage = () => {
           Bootcamp @ Le Wagon Montreal which I graduated in March 2022. The
           Front-End is where I like to challenge myself and create through code.
           <br /> <br />
-          I am a detail-oriented individual who enjoys visually appealing
-          websites. It is new technologies that drive me the most.
+          My motivation comes from creating visually appealing websites. It is
+          new technologies that drive me the most.
           <br /> <br />
           I am also a cat mom.
           <br /> <br />

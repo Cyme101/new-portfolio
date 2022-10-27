@@ -27,9 +27,9 @@ const Main = styled.div`
   font-family: "Ubuntu Mono", monospace;
   height: 60vh;
   justify-content: space-between;
-  line-height: 1.4;
-  opacity: 0.9;
-  padding: 3rem;
+  line-height: 1.2;
+  opacity: 0.8;
+  padding: 2rem;
   width: 30vw;
   z-index: 3;
 
@@ -94,10 +94,10 @@ const MySkillsPage = () => {
           </Description>
           <Description>
             <strong>Tools</strong>
-            <p>VSCode, GitHub.</p>
+            <p>GitHub & VSCode.</p>
           </Description>
         </Main>
-        <HeadTitle text="SKILLS" top="80%" right="30%" />
+        <HeadTitle text="SKILLS" top="77%" right="40%" />
       </Box>
     </ThemeProvider>
   );
