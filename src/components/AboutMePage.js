@@ -25,7 +25,7 @@ const Main = styled.div`
   font-size: calc(0.5rem + 1vw);
   height: 60vh;
   justify-content: center;
-  left: calc(4rem + 6vw);
+  left: calc(10rem + 6vw);
   line-height: 1.2;
   padding: 2rem;
   position: absolute;
@@ -55,9 +55,6 @@ const AboutMePage = () => {
           I've enrolled in an intensive 9-weeks Full-Stack Web Development
           Bootcamp @ Le Wagon Montreal which I graduated in March 2022. The
           Front-End is where I like to challenge myself and create through code.
-          <br /> <br />
-          My motivation comes from creating visually appealing websites. It is
-          new technologies that drive me the most.
           <br /> <br />
           I am also a cat mom.
           <br /> <br />

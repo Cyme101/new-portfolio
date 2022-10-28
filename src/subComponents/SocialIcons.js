@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 import { LinkedIn, GitHub, Twitter } from "../components/AllSvgs";
 import { LightTheme } from "../components/Themes";
 
@@ -10,26 +9,26 @@ const Icons = styled.div`
   bottom: 0;
   display: flex;
   flex-direction: column;
-  left: 5rem;
+  left: 2rem;
   position: fixed;
   z-index: 3;
 
   & > *:not(:last-child) {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
 `;
 
 const Line = styled(motion.span)`
   background-color: ${(props) =>
     props.color === "light" ? LightTheme.text : LightTheme.body};
-  height: 10rem;
+  height: 9rem;
   width: 2px;
 `;
 
 const SocialIcons = (props) => {
   return (
     <Icons>
-      <NavLink
+      <a
         style={{ color: "inherit" }}
         target="_blank"
         rel="noreferrer"
@@ -40,8 +39,8 @@ const SocialIcons = (props) => {
           height={30}
           fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
         />
-      </NavLink>
-      <NavLink
+      </a>
+      <a
         style={{ color: "inherit" }}
         target="_blank"
         rel="noreferrer"
@@ -52,19 +51,19 @@ const SocialIcons = (props) => {
           height={30}
           fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
         />
-      </NavLink>
-      <NavLink
+      </a>
+      <a
         style={{ color: "inherit" }}
         target="_blank"
         rel="noreferrer"
-        to={{ pathname: "https://twitter.com/IzabelVall" }}
+        href="https://twitter.com/IzabelVall"
       >
         <Twitter
           width={30}
           height={30}
           fill={props.theme === "light" ? LightTheme.text : LightTheme.body}
         />
-      </NavLink>
+      </a>
       <Line
         color={props.theme}
         initial={{

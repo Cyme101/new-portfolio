@@ -12,7 +12,7 @@ const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   display: flex;
   height: 100vh;
-  justify-content: space-evenly;
+  justify-content: center;
   position: relative;
   width: 100vw;
 `;
@@ -82,8 +82,8 @@ const MySkillsPage = () => {
             <Laptop width={40} height={40} /> Front-End Web Developer
           </Title>
           <Description>
-            After a Full-Stack Web Development Bootcamp in 2022, the Front-End
-            is where I like to challenge myself and create through code.
+            My motivation comes from creating visually appealing websites. It is
+            new technologies that drive me the most.
           </Description>
           <Description>
             <strong>Skills</strong>
@@ -97,7 +97,7 @@ const MySkillsPage = () => {
             <p>GitHub & VSCode.</p>
           </Description>
         </Main>
-        <HeadTitle text="SKILLS" top="77%" right="40%" />
+        <HeadTitle text="SKILLS" top="77%" right="25%" />
       </Box>
     </ThemeProvider>
   );

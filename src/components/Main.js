@@ -39,7 +39,7 @@ const Contact = styled.a`
 
 const PROJECTS = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
-  right: 1rem;
+  right: 2rem;
   position: absolute;
   text-decoration: none;
   top: 50%;
@@ -91,8 +91,8 @@ const Center = styled.button`
 
 const LogoCenter = styled.img`
   background-image: url({img});
-  height: 60%;
-  width: 60%;
+  height: 50%;
+  width: 50%;
 `;
 
 const DarkDiv = styled.div`
@@ -125,7 +125,6 @@ const Main = () => {
               width={click ? 120 : 200}
               height={click ? 120 : 200}
               style={{ color: "inherit" }}
-              rel="noreferrer"
               img
               src={img}
             />

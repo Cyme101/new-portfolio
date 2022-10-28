@@ -11,7 +11,6 @@ const IntroBox = styled(motion.div)`
   top: 50%;
   transform: translate(-50%, -50%);
   width: 65vw;
-
   background: linear-gradient(
         to right,
         ${(props) => props.theme.body} 50%,
@@ -42,7 +41,7 @@ const IntroSubBox = styled.div`
     left: 50%;
     position: absolute;
     transform: translate(-50%, 0%);
-    width: 85%;
+    width: 90%;
   }
 `;
 
