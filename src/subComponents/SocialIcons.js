@@ -1,8 +1,7 @@
-import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { LinkedIn, GitHub, Twitter } from "../components/AllSvgs";
-import { LightTheme } from "../components/Themes";
+import { LightTheme, mediaQueries } from "../components/Themes";
 
 const Icons = styled.div`
   align-items: center;
@@ -15,13 +14,26 @@ const Icons = styled.div`
 
   & > *:not(:last-child) {
     margin: 0.5rem 0;
+
+    ${mediaQueries(20)`
+      margin: 0.3rem 0;
+  `};
   }
+
+  ${mediaQueries(40)`
+  left: 1rem;
+      svg{
+        width:20px;
+        height:20px
+      }
+
+  `};
 `;
 
 const Line = styled(motion.span)`
   background-color: ${(props) =>
     props.color === "light" ? LightTheme.text : LightTheme.body};
-  height: 9rem;
+  height: 8rem;
   width: 2px;
 `;
 
@@ -70,7 +82,7 @@ const SocialIcons = (props) => {
           height: 0,
         }}
         animate={{
-          height: "10rem",
+          height: "8rem",
         }}
         transition={{
           type: "spring",

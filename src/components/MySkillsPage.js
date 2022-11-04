@@ -1,13 +1,17 @@
-import React from "react";
+import { lazy, Suspense } from "react";
+import { motion } from "framer-motion";
 import styled, { ThemeProvider } from "styled-components";
 import { LightTheme } from "./Themes";
+
+import Loading from "../subComponents/Loading";
 import { Laptop } from "./AllSvgs";
 
-import SocialIcons from "../subComponents/SocialIcons";
-import PowerButton from "../subComponents/PowerButton";
-import HeadTitle from "../subComponents/HeadTitle";
+const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
+const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 
-const Box = styled.div`
+const HeadTitle = lazy(() => import("../subComponents/HeadTitle"));
+
+const Box = styled(motion.div)`
   align-items: center;
   background-color: ${(props) => props.theme.body};
   display: flex;
@@ -17,7 +21,7 @@ const Box = styled.div`
   width: 100vw;
 `;
 
-const Main = styled.div`
+const Main = styled(motion.div)`
   background-color: ${(props) => props.theme.body};
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
@@ -68,37 +72,40 @@ const Description = styled.div`
   ul,
   p {
     margin-left: 2rem;
+    padding-top: 0.5rem;
   }
 `;
 
 const MySkillsPage = () => {
   return (
     <ThemeProvider theme={LightTheme}>
-      <Box>
-        <SocialIcons theme="light" />
-        <PowerButton />
-        <Main>
-          <Title>
-            <Laptop width={40} height={40} /> Front-End Web Developer
-          </Title>
-          <Description>
-            My motivation comes from creating visually appealing websites. It is
-            new technologies that drive me the most.
-          </Description>
-          <Description>
-            <strong>Skills</strong>
-            <p>
-              HTML, CSS, JavaScript, ReactJS, styled-components, Bootstrap,
-              Ruby, Ruby on Rails & Figma.
-            </p>
-          </Description>
-          <Description>
-            <strong>Tools</strong>
-            <p>GitHub & VSCode.</p>
-          </Description>
-        </Main>
-        <HeadTitle text="SKILLS" top="77%" right="25%" />
-      </Box>
+      <Suspense fallback={<Loading />}>
+        <Box>
+          <SocialIcons theme="light" />
+          <PowerButton />
+          <Main>
+            <Title>
+              <Laptop width={40} height={40} /> Front-End Web Developer
+            </Title>
+            <Description>
+              My motivation comes from creating visually appealing websites. It
+              is new technologies that drive me the most.
+            </Description>
+            <Description>
+              <strong>Skills</strong>
+              <p>
+                HTML, CSS, JavaScript, ReactJS, styled-components, Bootstrap,
+                Ruby, Ruby on Rails & Figma.
+              </p>
+            </Description>
+            <Description>
+              <strong>Tools</strong>
+              <p>GitHub & VSCode.</p>
+            </Description>
+          </Main>
+          <HeadTitle text="SKILLS" top="77%" right="10%" />
+        </Box>
+      </Suspense>
     </ThemeProvider>
   );
 };
