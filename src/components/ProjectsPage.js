@@ -51,10 +51,10 @@ const Main = styled(motion.ul)`
 const Rotate = styled.span`
   bottom: 3rem;
   display: block;
-  height: 70px;
+  height: 60px;
   position: fixed;
   right: 3rem;
-  width: 70px;
+  width: 60px;
   z-index: 1;
 `;
 

@@ -1,14 +1,16 @@
 import { Route, Routes, useLocation } from "react-router";
 import { ThemeProvider } from "styled-components";
+import { AnimatePresence } from "framer-motion";
+import { lazy, Suspense } from "react";
 import GlobalStyle from "./globalStyles";
 import { LightTheme } from "./components/Themes";
+import Loading from "./subComponents/Loading";
 
-import Main from "./components/Main";
-import AboutMePage from "./components/AboutMePage";
-import MySkillsPage from "./components/MySkillsPage";
-import ProjectsPage from "./components/ProjectsPage";
-import Audio from "./subComponents/Audio";
-import { AnimatePresence } from "framer-motion";
+const Main = lazy(() => import("./components/Main"));
+const AboutMePage = lazy(() => import("./components/AboutMePage"));
+const MySkillsPage = lazy(() => import("./components/MySkillsPage"));
+const ProjectsPage = lazy(() => import("./components/ProjectsPage"));
+const Audio = lazy(() => import("./subComponents/Audio"));
 
 function App() {
   const location = useLocation();
@@ -17,8 +19,9 @@ function App() {
     <div>
       <GlobalStyle />
       <ThemeProvider theme={LightTheme}>
+        <Suspense fallback={<Loading />}></Suspense>
         <Audio />
-        <AnimatePresence wait>
+        <AnimatePresence exitBeforeEnter>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Main />} />
             <Route path="/about" element={<AboutMePage />} />

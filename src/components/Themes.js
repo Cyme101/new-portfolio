@@ -1,5 +1,5 @@
 // For dark & light themes
-// Light #F1EADC is pièce de musée
+// Light #F1EADC is Pièce de musée
 
 export const LightTheme = {
   body: "#F1EADC",
