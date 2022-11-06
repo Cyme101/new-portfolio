@@ -27,14 +27,14 @@ const Main = styled(motion.ul)`
   height: 40vh;
   left: calc(10rem + 15vw);
   position: fixed;
-  top: 9rem;
+  top: 10rem;
 
   ${mediaQueries(50)`
     left: calc(8rem + 15vw);
   `};
 
   ${mediaQueries(40)`
-    top: 30%;
+    top: 20%;
     left: calc(6rem + 15vw);
   `};
 
@@ -49,11 +49,11 @@ const Main = styled(motion.ul)`
 `;
 
 const Rotate = styled.span`
-  bottom: 3rem;
+  bottom: 2rem;
   display: block;
   height: 70px;
   position: fixed;
-  right: 3rem;
+  right: 2rem;
   width: 70px;
   z-index: 1;
 
@@ -81,7 +81,6 @@ const Container = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-
     transition: {
       staggerChildren: 0.5,
       duration: 0.5,

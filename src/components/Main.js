@@ -180,7 +180,7 @@ const Main = () => {
               img
               src={img}
             />
-            <span>Click Here!</span>
+            <span></span>
           </Center>
           {mq ? (
             <Contact
