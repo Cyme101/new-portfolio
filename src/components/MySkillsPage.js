@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import styled, { ThemeProvider } from "styled-components";
 import { LightTheme } from "./Themes";
+import { mediaQueries } from "./Themes";
 
 import Loading from "../subComponents/Loading";
 import { Laptop } from "./AllSvgs";
@@ -19,6 +20,21 @@ const Box = styled(motion.div)`
   justify-content: center;
   position: relative;
   width: 100vw;
+
+  ${mediaQueries(50)`
+    flex-direction:column;  
+    padding:8rem 0;
+    height:auto;
+    &>*:nth-child(5){
+      margin-bottom:5rem;
+    }   
+  `};
+
+  ${mediaQueries(30)` 
+    &>*:nth-child(5){
+      margin-bottom:4rem;
+    } 
+  `};
 `;
 
 const Main = styled(motion.div)`
