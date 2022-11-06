@@ -28,13 +28,13 @@ const Box = styled.div`
 
 const Play = keyframes`
 0%{
-    transform:scaleY(1);
+  transform: scaleY(1);
 }
 50%{
-    transform:scaleY(2);
+  transform: scaleY(2);
 }
 100%{
-    transform:scaleY(1);
+  transform: scaleY(1);
 }
 `;
 

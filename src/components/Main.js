@@ -29,11 +29,11 @@ const MainContainer = styled(motion.div)`
 
     h2 {
       ${mediaQueries(40)`
-      font-size:1.2em;
+      font-size: 1.2em;
   `};
 
       ${mediaQueries(30)`
-      font-size:1em;
+      font-size: 1em;
   `};
     }
   }
@@ -43,8 +43,8 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
-const Contact = styled.a`
-  color: ${(props) => props.theme.text};
+const Contact = styled(NavLink)`
+  color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   cursor: pointer;
   position: absolute;
   right: calc(1rem + 2vw);
@@ -130,7 +130,7 @@ const DarkDiv = styled.div`
     props.click
       ? mediaQueries(50)`
        height: 50%;
-       right:0;
+       right: 0;
        width: 100%;
        transition: width 0.5s ease, height 1s ease 0.5s;
   `
@@ -186,7 +186,7 @@ const Main = () => {
             <Contact
               click={+click}
               target="_blank"
-              to={{ pathname: "mailto:isabelle.vall@gmail.com" }}
+              href="mailto:isabelle.vall@gmail.com"
             >
               <motion.h3
                 initial={{
@@ -207,7 +207,7 @@ const Main = () => {
             <Contact
               click={+false}
               target="_blank"
-              to={{ pathname: "mailto:isabelle.vall@gmail.com" }}
+              href="mailto:isabelle.vall@gmail.com"
             >
               <motion.h3
                 initial={{

@@ -21,7 +21,7 @@ function App() {
       <ThemeProvider theme={LightTheme}>
         <Suspense fallback={<Loading />}></Suspense>
         <Audio />
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Main />} />
             <Route path="/about" element={<AboutMePage />} />

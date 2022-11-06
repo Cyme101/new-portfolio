@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Source Sans Pro',sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     overflow-x: hidden;
     padding: 0;

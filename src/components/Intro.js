@@ -6,7 +6,6 @@ import { mediaQueries } from "./Themes";
 
 const IntroBox = styled(motion.div)`
   display: flex;
-  /* height: 60vh; */
   left: 50%;
   position: absolute;
   right: 0;
@@ -42,8 +41,8 @@ const IntroBox = styled(motion.div)`
   ${mediaQueries(50)`
     width: 50vw;
     background-size: 100% 2px;
-    flex-direction:column;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: space-between;
   `};
 
   ${mediaQueries(40)`
@@ -136,7 +135,7 @@ const IntroText = styled(motion.div)`
     `};
   }
 
-  ${mediaQueries(40)`
+  ${mediaQueries(30)`
     font-size: calc(1rem + 1.5vw);
   `};
 

@@ -22,28 +22,28 @@ const Box = styled(motion.div)`
 `;
 
 const Main = styled(motion.ul)`
-  color: #f1eadc;
+  color: #fffdfa;
   display: flex;
   height: 40vh;
   left: calc(10rem + 15vw);
   position: fixed;
-  top: 10rem;
+  top: 9rem;
 
   ${mediaQueries(50)`
-    left:calc(8rem + 15vw);
+    left: calc(8rem + 15vw);
   `};
 
   ${mediaQueries(40)`
     top: 30%;
-    left:calc(6rem + 15vw);
+    left: calc(6rem + 15vw);
   `};
 
   ${mediaQueries(30)`
-    left:calc(2rem + 15vw);
+    left: calc(2rem + 15vw);
   `};
 
   ${mediaQueries(20)`
-    left:calc(1rem + 15vw);
+    left: calc(1rem + 15vw);
       }
   `};
 `;
@@ -51,11 +51,29 @@ const Main = styled(motion.ul)`
 const Rotate = styled.span`
   bottom: 3rem;
   display: block;
-  height: 60px;
+  height: 70px;
   position: fixed;
   right: 3rem;
-  width: 60px;
+  width: 70px;
   z-index: 1;
+
+  ${mediaQueries(40)`
+    width: 60px;
+    height: 60px;   
+      svg{
+        width: 60px;
+        height: 60px;
+      }
+  `};
+
+  ${mediaQueries(25)`
+    width: 50px;
+    height: 50px;
+      svg{
+        width: 50px;
+        height: 50px;
+      }
+  `};
 `;
 
 // Framer-motion Configuration
@@ -106,7 +124,7 @@ const ProjectsPage = () => {
           <Rotate ref={arrows}>
             <Arrows width={70} height={70} fill={DarkTheme.text} />
           </Rotate>
-          <HeadTitle text="PROJECTS" top="60%" left="35%" />
+          <HeadTitle text="PROJECTS" top="60%" left="25%" />
         </Box>
       </Suspense>
     </ThemeProvider>

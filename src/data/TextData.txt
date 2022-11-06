@@ -36,8 +36,8 @@ You can connect with me via social links.
 
 Theme
 
-  body:"#F1EADC", (pièce de musée)
-  bodyRgba : "241, 234, 220",
+  body:"#fffdfa",
+  bodyRgba : "255, 253, 250",
   fontFamily:"'Source Code Pro', sans-serif",
   text:"#090909",
   textRgba:"9,9,9",

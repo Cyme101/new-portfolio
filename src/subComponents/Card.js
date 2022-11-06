@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { GitHub } from "../components/AllSvgs";
+import { mediaQueries } from "../components/Themes";
 
 const Box = styled(motion.li)`
   height: 40vh;
@@ -23,6 +24,31 @@ const Box = styled(motion.li)`
     color: ${(props) => props.theme.text};
     border: 1px solid ${(props) => props.theme.text};
   }
+
+  ${mediaQueries(50)`
+    width: 16rem;
+    margin-right: 6rem;
+    height: 35vh;
+  `};
+
+  ${mediaQueries(40)`
+    width: 14rem;
+    margin-right: 4rem;
+    height: 35vh;
+  `};
+
+  ${mediaQueries(25)`
+    width: 12rem;
+    margin-right: 4rem;
+    height: 35vh;
+    padding: 1.5rem 1.5rem;
+  `};
+
+  ${mediaQueries(20)`
+    width: 10rem;
+    margin-right: 4rem;
+    height: 30vh;
+  `};
 `;
 
 const Title = styled.h2`

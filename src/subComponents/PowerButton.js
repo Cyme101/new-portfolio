@@ -6,7 +6,7 @@ import { mediaQueries } from "../components/Themes";
 
 const Power = styled.button`
   align-items: center;
-  background-color: #f1eadc;
+  background-color: #fffdfa;
   border: 2px solid #090909;
   border-radius: 50%;
   cursor: pointer;
@@ -34,8 +34,8 @@ const Power = styled.button`
     width: 2rem;
     height: 2rem;
       svg{
-        width:20px;
-        height:20px;
+        width: 20px;
+        height: 20px;
       }
   `};
 `;

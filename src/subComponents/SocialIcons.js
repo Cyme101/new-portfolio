@@ -16,17 +16,16 @@ const Icons = styled.div`
     margin: 0.5rem 0;
 
     ${mediaQueries(20)`
-      margin: 0.3rem 0;
+      margin: 0.6rem 0;
   `};
   }
 
   ${mediaQueries(40)`
-  left: 1rem;
-      svg{
-        width:20px;
-        height:20px
+    left: 1rem;
+      svg {
+        width: 20px;
+        height: 20px
       }
-
   `};
 `;
 
