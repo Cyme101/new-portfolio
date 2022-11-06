@@ -43,7 +43,7 @@ const Container = styled.div`
   padding: 2rem;
 `;
 
-const Contact = styled(NavLink)`
+const Contact = styled.a`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   cursor: pointer;
   position: absolute;
