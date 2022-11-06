@@ -112,19 +112,24 @@ const ProjectsPage = () => {
   return (
     <ThemeProvider theme={DarkTheme}>
       <Suspense fallback={<Loading />}>
-        <Box>
+        <Box
+          key="projects"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 1 } }}
+          exit={{ opacity: 0, transition: { duration: 0.5 } }}
+        >
           <LogoComponent theme="dark" />
-          <SocialIcons theme="dark" />
           <PowerButton />
+          <SocialIcons theme="dark" />
           <Main ref={ref} variants={Container} initial="hidden" animate="show">
             {Projects.map((d) => (
               <Card key={d.id} data={d} />
             ))}
           </Main>
+          <HeadTitle text="PROJECTS" top="60%" left="25%" />
           <Rotate ref={arrows}>
             <Arrows width={70} height={70} fill={DarkTheme.text} />
           </Rotate>
-          <HeadTitle text="PROJECTS" top="60%" left="25%" />
         </Box>
       </Suspense>
     </ThemeProvider>

@@ -57,6 +57,15 @@ const Main = styled(motion.div)`
     color: ${(props) => props.theme.body};
     background-color: ${(props) => props.theme.text};
   }
+
+  ${mediaQueries(60)`
+    height: 55vh;
+  `};
+
+  ${mediaQueries(50)`
+    width: 50vw;
+    height: max-content;
+  `};
 `;
 
 const Title = styled.h2`
@@ -64,6 +73,28 @@ const Title = styled.h2`
   display: flex;
   font-size: calc(1em + 1vw);
   justify-content: center;
+
+  ${mediaQueries(60)`
+    font-size:calc(0.8em + 1vw);
+  `};
+
+  ${mediaQueries(50)`
+    font-size:calc(1em + 2vw);
+    margin-bottom:1rem;
+  `};
+
+  ${mediaQueries(30)`
+    font-size:calc(1em + 1vw);
+  `};
+
+  ${mediaQueries(25)`
+    font-size:calc(0.8em + 1vw);
+      svg{
+        width:30px;
+        height:30px;
+      }
+  `};
+
   ${Main}:hover & {
     & > * {
       fill: ${(props) => props.theme.body};
@@ -90,6 +121,18 @@ const Description = styled.div`
     margin-left: 2rem;
     padding-top: 0.5rem;
   }
+
+  ${mediaQueries(50)`
+    font-size: calc(0.8em + 1vw);
+  `};
+
+  ${mediaQueries(30)`
+    font-size:calc(0.7em + 1vw);
+  `};
+
+  ${mediaQueries(25)`
+    font-size:calc(0.5em + 1vw);
+  `};
 `;
 
 const MySkillsPage = () => {
@@ -119,7 +162,7 @@ const MySkillsPage = () => {
               <p>GitHub & VSCode.</p>
             </Description>
           </Main>
-          <HeadTitle text="SKILLS" top="77%" right="10%" />
+          <HeadTitle text="SKILLS" top="75%" right="10%" />
         </Box>
       </Suspense>
     </ThemeProvider>
