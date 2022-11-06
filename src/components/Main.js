@@ -200,7 +200,7 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Say Bonjour-Hi...
+                Say Bonjour-Hi
               </motion.h3>
             </Contact>
           ) : (
