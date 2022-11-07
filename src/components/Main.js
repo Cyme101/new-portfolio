@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
@@ -41,6 +41,32 @@ const MainContainer = styled(motion.div)`
 
 const Container = styled.div`
   padding: 2rem;
+`;
+
+const Center = styled.button`
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: ${(props) => (props.click ? "92%" : "50%")};
+  outline: none;
+  position: absolute;
+  top: ${(props) => (props.click ? "85%" : "50%")};
+  transition: all 1s ease;
+  & > :last-child {
+    display: ${(props) => (props.click ? "none" : "inline-block")};
+    padding-top: 1rem;
+  }
+  transform: translate(-50%, -50%);
+`;
+
+const LogoCenter = styled.img`
+  background-image: url({img});
+  height: 50%;
+  width: 50%;
 `;
 
 const Contact = styled.a`
@@ -87,32 +113,6 @@ const SKILLS = styled(NavLink)`
   color: ${(props) => props.theme.text};
   text-decoration: none;
   z-index: 1;
-`;
-
-const Center = styled.button`
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: ${(props) => (props.click ? "92%" : "50%")};
-  outline: none;
-  position: absolute;
-  top: ${(props) => (props.click ? "85%" : "50%")};
-  transition: all 1s ease;
-  & > :last-child {
-    display: ${(props) => (props.click ? "none" : "inline-block")};
-    padding-top: 1rem;
-  }
-  transform: translate(-50%, -50%);
-`;
-
-const LogoCenter = styled.img`
-  background-image: url({img});
-  height: 50%;
-  width: 50%;
 `;
 
 const DarkDiv = styled.div`

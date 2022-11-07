@@ -19,16 +19,17 @@ function App() {
     <div>
       <GlobalStyle />
       <ThemeProvider theme={LightTheme}>
-        <Suspense fallback={<Loading />}></Suspense>
-        <Audio />
-        <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Main />} />
-            <Route path="/about" element={<AboutMePage />} />
-            <Route path="/skills" element={<MySkillsPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-          </Routes>
-        </AnimatePresence>
+        <Suspense fallback={<Loading />}>
+          <Audio />
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Main />} />
+              <Route path="/about" element={<AboutMePage />} />
+              <Route path="/skills" element={<MySkillsPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+            </Routes>
+          </AnimatePresence>
+        </Suspense>
       </ThemeProvider>
     </div>
   );

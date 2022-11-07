@@ -90,7 +90,7 @@ const Container = {
 
 const ProjectsPage = () => {
   const ref = useRef(null);
-  const arrows = useRef(null);
+  const arrows = useRef(true);
 
   useEffect(() => {
     let element = ref.current;
@@ -103,6 +103,7 @@ const ProjectsPage = () => {
     };
 
     window.addEventListener("scroll", rotate);
+
     return () => {
       window.removeEventListener("scroll", rotate);
     };
@@ -125,7 +126,7 @@ const ProjectsPage = () => {
               <Card key={d.id} data={d} />
             ))}
           </Main>
-          <HeadTitle text="PROJECTS" top="60%" left="25%" />
+          <HeadTitle text="PROJECTS" top="10%" left="20%" />
           <Rotate ref={arrows}>
             <Arrows width={70} height={70} fill={DarkTheme.text} />
           </Rotate>

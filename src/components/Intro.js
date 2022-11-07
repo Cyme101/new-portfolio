@@ -82,7 +82,7 @@ const IntroSubBox = styled.div`
   width: 50%;
 
   .pic {
-    bottom: 5%;
+    bottom: 10%;
     height: auto;
     left: 50%;
     position: absolute;
