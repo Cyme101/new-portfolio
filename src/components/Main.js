@@ -1,11 +1,9 @@
 import { lazy, Suspense, useState } from "react";
-import { motion } from "framer-motion";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-
 import img from "../assets/img/logo.png";
 import Intro from "./Intro";
-
 import Loading from "../subComponents/Loading";
 import { mediaQueries } from "./Themes";
 

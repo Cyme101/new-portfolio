@@ -2,9 +2,7 @@ import { useEffect, useRef, lazy, Suspense } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme, mediaQueries } from "./Themes";
 import { motion } from "framer-motion";
-
 import Loading from "../subComponents/Loading";
-import LogoComponent from "../subComponents/LogoComponent";
 import { Projects } from "../data/ProjectsData";
 import Card from "../subComponents/Card";
 import { Arrows } from "./AllSvgs";
@@ -90,7 +88,7 @@ const Container = {
 
 const ProjectsPage = () => {
   const ref = useRef(null);
-  const arrows = useRef(true);
+  const arrows = useRef(null);
 
   useEffect(() => {
     let element = ref.current;
@@ -103,7 +101,6 @@ const ProjectsPage = () => {
     };
 
     window.addEventListener("scroll", rotate);
-
     return () => {
       window.removeEventListener("scroll", rotate);
     };
@@ -118,7 +115,6 @@ const ProjectsPage = () => {
           animate={{ opacity: 1, transition: { duration: 1 } }}
           exit={{ opacity: 0, transition: { duration: 0.5 } }}
         >
-          <LogoComponent theme="dark" />
           <PowerButton />
           <SocialIcons theme="dark" />
           <Main ref={ref} variants={Container} initial="hidden" animate="show">

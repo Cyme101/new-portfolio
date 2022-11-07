@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
-import { motion } from "framer-motion";
 import styled, { ThemeProvider } from "styled-components";
+import { motion } from "framer-motion";
 import { LightTheme } from "./Themes";
 import { mediaQueries } from "./Themes";
 

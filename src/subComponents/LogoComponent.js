@@ -1,11 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 import LogoSrc from "../assets/img/logo.png";
 import { LightTheme } from "../components/Themes";
 
 export const Logo = styled.img`
   color: ${(props) =>
-    props.color === "dark" ? LightTheme.text : LightTheme.body};
+    props.color === "light" ? LightTheme.text : LightTheme.body};
   display: inline-block;
   height: 50px;
   left: 2rem;

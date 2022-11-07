@@ -1,7 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { GitHub } from "../components/AllSvgs";
 import { mediaQueries } from "../components/Themes";
 
