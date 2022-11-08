@@ -224,12 +224,9 @@ const Main = () => {
             </Contact>
           )}
           {mq ? (
-            <PROJECTS
-              click={+click}
-              onClick={() => setpath("projects")}
-              to="/projects"
-            >
+            <PROJECTS click={+click} to="/projects">
               <motion.h3
+                onClick={() => setpath("projects")}
                 initial={{
                   y: -200,
                   transition: { type: "spring", duration: 1.5, delay: 1 },

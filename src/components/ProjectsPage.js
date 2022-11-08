@@ -1,4 +1,4 @@
-import { useEffect, useRef, lazy, Suspense } from "react";
+import { useEffect, createRef, lazy, Suspense } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme, mediaQueries } from "./Themes";
 import { motion } from "framer-motion";
@@ -87,14 +87,12 @@ const Container = {
 };
 
 const ProjectsPage = () => {
-  const ref = useRef(null);
-  const arrows = useRef(null);
+  const ref = createRef(null);
+  const arrows = createRef(null);
 
   useEffect(() => {
-    let element = ref.current;
-
     const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset}px)`;
+      ref.current.style.transform = `translateX(${-window.pageYOffset}px)`;
 
       return (arrows.current.style.transform =
         "rotate(" + -window.pageYOffset + "deg)");
@@ -104,7 +102,7 @@ const ProjectsPage = () => {
     return () => {
       window.removeEventListener("scroll", rotate);
     };
-  }, []);
+  });
 
   return (
     <ThemeProvider theme={DarkTheme}>
