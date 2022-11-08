@@ -282,7 +282,7 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                ABOUT ME.
+                ABOUT.
               </motion.h3>
             </ABOUT>
             <SKILLS to="/skills">
@@ -299,7 +299,7 @@ const Main = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                MY SKILLS.
+                SKILLS.
               </motion.h3>
             </SKILLS>
           </BottomBar>
