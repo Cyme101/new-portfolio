@@ -54,7 +54,7 @@ const IntroBox = styled(motion.div)`
   `};
 
   ${mediaQueries(20)`
-    width: 60vw;
+    width: 55vw;
   `};
 
   @media only screen and (max-width: 50em) {
