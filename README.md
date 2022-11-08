@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Audio Credits
+## Audio Credits
 
 This portfolio features the song "Seasons Change" by HoliznaCC0 from the album "Lo-fi And Chill", available under a CC0 1.0 Universal License here:
 [https://freemusicarchive.org/music/holiznacc0/lo-fi-and-chill/seasons-change/](https://freemusicarchive.org/music/holiznacc0/lo-fi-and-chill/seasons-change/)
