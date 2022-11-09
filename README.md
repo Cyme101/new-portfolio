@@ -12,7 +12,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Project Description
 
-This is my portfolio website built with ReactJS and styled-components. It was deployed with Vercel.
+This is my portfolio website built with React.js and styled-components. It was deployed with Vercel.
 
 ## Installation
 
