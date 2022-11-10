@@ -85,10 +85,9 @@ const Footer = styled.footer`
 const Link = styled.a`
   background-color: ${(props) => props.theme.body};
   border-radius: 0 0 0 20px;
-  color: inherit;
+  color: ${(props) => props.theme.text};
   font-size: calc(1em + 0.5vw);
   padding: 0.5rem calc(2rem + 2vw);
-  text-decoration: none;
   ${Box}:hover & {
     background-color: ${(props) => props.theme.text};
     color: ${(props) => props.theme.body};
@@ -132,7 +131,12 @@ const Card = (props) => {
       </Tags>
       <Footer>
         <Link>
-          <a href={demo} target="_blank" rel="noreferrer">
+          <a
+            href={demo}
+            style={{ textDecoration: "none" }}
+            target="_blank"
+            rel="noreferrer"
+          >
             Visit
           </a>
         </Link>
