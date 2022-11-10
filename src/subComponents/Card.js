@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { GitHub } from "../components/AllSvgs";
@@ -83,10 +82,10 @@ const Footer = styled.footer`
   justify-content: space-between;
 `;
 
-const Link = styled(NavLink)`
+const Link = styled.a`
   background-color: ${(props) => props.theme.body};
   border-radius: 0 0 0 20px;
-  color: ${(props) => props.theme.text};
+  color: inherit;
   font-size: calc(1em + 0.5vw);
   padding: 0.5rem calc(2rem + 2vw);
   text-decoration: none;
@@ -96,7 +95,7 @@ const Link = styled(NavLink)`
   }
 `;
 
-const Git = styled(NavLink)`
+const Git = styled.a`
   color: inherit;
   text-decoration: none;
   ${Box}:hover & {
@@ -132,11 +131,15 @@ const Card = (props) => {
         })}
       </Tags>
       <Footer>
-        <Link to={{ pathname: `${demo}` }} target="_blank">
-          Visit
+        <Link>
+          <a href={demo} target="_blank" rel="noreferrer">
+            Visit
+          </a>
         </Link>
-        <Git to={{ pathname: `${github}` }} target="_blank">
-          <GitHub width={40} height={40} />
+        <Git>
+          <a href={github} target="_blank" rel="noreferrer">
+            <GitHub width={40} height={40} />
+          </a>
         </Git>
       </Footer>
     </Box>
