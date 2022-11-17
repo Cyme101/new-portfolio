@@ -8,22 +8,44 @@ const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  margin: 0 125px;
+  padding: 0 125px;
+  text-align: center;
+
+  ${mediaQueries(80)`
+    font-size: 1.75rem;
+  `};
+
+  ${mediaQueries(45)`
+    font-size: 1.5rem;
+    padding: 0 80px;
+  `};
+
+  ${mediaQueries(30)`
+    font-size: 1.25rem;
+    padding: 0 50px;
+  `};
 
   ${mediaQueries(20)`
-    font-size: calc(1rem + 2vw);
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0 30px;
   `};
 `;
 
 const Number = styled.h1`
   font-family: "Montserrat", sans-serif;
   padding: 30px;
+
+  ${mediaQueries(20)`
+    font-size: 2rem;
+  `};
 `;
 
 const Text = styled.h3`
   font-family: "Source Code Pro", sans-serif;
-  text-align: center;
+
+  ${mediaQueries(20)`
+    font-size: 1.25rem;
+  `};
 `;
 
 const NotFoundPage = () => {

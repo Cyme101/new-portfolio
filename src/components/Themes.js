@@ -22,7 +22,7 @@ export const breakpoints = {
   md: 30,
   lg: 45,
   xl: 60,
-  xxl: 75,
+  xxl: 80,
 };
 
 export const mediaQueries = (key) => {
