@@ -85,7 +85,7 @@ const Footer = styled.footer`
 const Link = styled.a`
   background-color: ${(props) => props.theme.body};
   border-radius: 0 0 0 20px;
-  color: ${(props) => props.theme.text};
+  color: inherit;
   font-size: calc(1em + 0.5vw);
   padding: 0.5rem calc(2rem + 2vw);
   ${Box}:hover & {

@@ -6,6 +6,7 @@ import GlobalStyle from "./globalStyles";
 import { LightTheme } from "./components/Themes";
 import Loading from "./subComponents/Loading";
 
+const NotFoundPage = lazy(() => import("./components/NotFoundPage"));
 const Main = lazy(() => import("./components/Main"));
 const AboutMePage = lazy(() => import("./components/AboutMePage"));
 const MySkillsPage = lazy(() => import("./components/MySkillsPage"));
@@ -23,6 +24,7 @@ function App() {
           <Audio />
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
+              <Route path="*" element={<NotFoundPage />} />
               <Route path="/" element={<Main />} />
               <Route path="/about" element={<AboutMePage />} />
               <Route path="/skills" element={<MySkillsPage />} />
