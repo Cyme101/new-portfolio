@@ -153,13 +153,13 @@ const MySkillsPage = () => {
             <Description>
               <strong>Skills</strong>
               <p>
-                HTML, CSS, JavaScript, ReactJS, styled-components, Bootstrap,
+                HTML, CSS, JavaScript, React.js, styled-components, Bootstrap,
                 Ruby, Ruby on Rails & Figma.
               </p>
             </Description>
             <Description>
               <strong>Tools</strong>
-              <p>GitHub & VSCode.</p>
+              <p>GitHub, VSCode, Trello and Vercel.</p>
             </Description>
           </Main>
           <HeadTitle text="SKILLS" top="75%" right="10%" />
