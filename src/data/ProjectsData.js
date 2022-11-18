@@ -30,7 +30,7 @@ export const Projects = [
       "rubyonrails",
       "postgreSQL",
     ],
-    demo: "https://zoo4u.herokuapp.com/",
+    demo: "https://zoo4u.herokuapp.com",
     github: "https://github.com/Cyme101/zoo4u",
   },
   {
@@ -38,7 +38,7 @@ export const Projects = [
     name: "The Famous Food App",
     description: "This is my first project with ReactJS with module CSS.",
     tags: ["reactjs", "redux", "CSS"],
-    demo: "https://github.com/Cyme101/the-famous-food-app",
+    demo: "https://the-famous-food-app.vercel.app",
     github: "https://github.com/Cyme101/the-famous-food-app",
   },
   {
@@ -47,7 +47,7 @@ export const Projects = [
     description:
       "This is my E-Commerce project with ReactJS with styled-components.",
     tags: ["reactjs", "styled-components"],
-    demo: "https://github.com/Cyme101/thevoid",
+    demo: "https://thevoid-tau.vercel.app",
     github: "https://github.com/Cyme101/thevoid",
   },
   {
