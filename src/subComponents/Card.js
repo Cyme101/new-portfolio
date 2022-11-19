@@ -85,7 +85,7 @@ const Footer = styled.footer`
 const Link = styled.a`
   background-color: ${(props) => props.theme.body};
   border-radius: 0 0 0 20px;
-  color: inherit;
+  color: ${(props) => props.theme.text};
   font-size: calc(1em + 0.5vw);
   padding: 0.5rem calc(2rem + 2vw);
   ${Box}:hover & {
@@ -133,7 +133,7 @@ const Card = (props) => {
         <Link>
           <a
             href={demo}
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", color: "inherit" }}
             target="_blank"
             rel="noreferrer"
           >
