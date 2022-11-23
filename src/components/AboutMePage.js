@@ -76,7 +76,7 @@ const AboutMePage = () => {
           <Main>
             Bonjour-Hi, I'm Isabelle Vallerand.
             <br /> <br />
-            A Front-end Web Developer based out of Mtl, Canada. I am from Quebec
+            A Front-end Developer based out of Mtl, Canada. I am from Quebec
             city and moved to Montreal a few years ago. I come from a Fashion
             Design background but I became interested in IT quickly. Over the
             past 10 years, I've worked as a Support Analyst therefore

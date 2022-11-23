@@ -11,20 +11,23 @@ Skills & Tools
 
 HTML
 CSS
+SCSS
 JavaScript
-ReactJS
+React.js
+styled-components
 Bootstrap
 Figma
 GitHub
 VSCode
+Vercel
 
-Currently learning WordPress to add some CMS knowledge to my Stack.
+Currently learning GSAP, WordPress to add some CMS knowledge to my Stack.
 
 
 About Me
 
 Bonjour-Hi, I'm Isabelle Vallerand
-Front-End Web Developer based out of Mtl, Canada
+Front-End Developer based out of Mtl, Canada
 I am from Quebec city and moved to Montreal a few years ago. I come from a Fashion Design background but I became interested in IT quickly. Over the past 10 years, I've worked as a Support Analyst therefore problem-solving skills is in my DNA.
 
 Last year I decided to learn to code as a career change and found out that coding is what I love to do. I've enrolled in an intensive 9-weeks Full-Stack Web Development Bootcamp @ Le Wagon Montreal which I graduated in March 2022. The Front-End is where I like to challenge myself and create through code.

@@ -144,7 +144,7 @@ const MySkillsPage = () => {
           <PowerButton />
           <Main>
             <Title>
-              <Laptop width={40} height={40} /> Front-End Web Developer
+              <Laptop width={40} height={40} /> Front-End Developer
             </Title>
             <Description>
               My motivation comes from creating visually appealing websites. It
@@ -153,8 +153,8 @@ const MySkillsPage = () => {
             <Description>
               <strong>Skills</strong>
               <p>
-                HTML, CSS, JavaScript, React.js, styled-components, Bootstrap,
-                Ruby, Ruby on Rails & Figma.
+                HTML, CSS, SCSS, JavaScript, React.js, styled-components,
+                Bootstrap, Ruby, Ruby on Rails & Figma.
               </p>
             </Description>
             <Description>
