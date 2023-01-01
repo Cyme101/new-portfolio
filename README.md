@@ -31,5 +31,7 @@ Run development mode
 
 ## Audio Credits
 
-This portfolio features the song "Seasons Change" by HoliznaCC0 from the album "Lo-fi And Chill", available under a CC0 1.0 Universal License here:
-[https://freemusicarchive.org/music/holiznacc0/lo-fi-and-chill/seasons-change/](https://freemusicarchive.org/music/holiznacc0/lo-fi-and-chill/seasons-change/)
+This portfolio features the song "Untitled" by Lofi Hour.
+
+Audio File URL:
+[https://pixabay.com/music/beats-untitled-123636/](https://pixabay.com/music/beats-untitled-123636/)

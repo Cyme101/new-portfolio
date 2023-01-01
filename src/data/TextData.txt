@@ -19,6 +19,7 @@ Bootstrap
 Figma
 GitHub
 VSCode
+Trello
 Vercel
 
 Currently learning GSAP, WordPress to add some CMS knowledge to my Stack.

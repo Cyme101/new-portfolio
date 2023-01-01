@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import styled, { keyframes } from "styled-components";
-import music from "../assets/audio/HoliznaCC0 - Seasons Change.mp3";
+import music from "../assets/audio/untitled-123636.mp3";
 
 const Box = styled.div`
   cursor: pointer;
