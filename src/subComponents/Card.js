@@ -46,7 +46,7 @@ const Box = styled(motion.li)`
   ${mediaQueries(20)`
     width: 10rem;
     margin-right: 4rem;
-    height: 30vh;
+    height: 40vh;
   `};
 `;
 
@@ -65,7 +65,7 @@ const Tags = styled.div`
   border-top: 2px solid ${(props) => props.theme.body};
   flex-wrap: wrap;
   line-height: 1.5rem;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   ${Box}:hover & {
     border-top: 2px solid ${(props) => props.theme.text};
   }
