@@ -23,16 +23,17 @@ const Main = styled(motion.ul)`
   color: #fffdfa;
   display: flex;
   height: 40vh;
-  left: calc(10rem + 15vw);
+  left: calc(1rem + 15vw);
   position: fixed;
   top: 10rem;
 
   ${mediaQueries(50)`
-    left: calc(8rem + 15vw);
+    top: 16%;
+    left: calc(3rem + 15vw);
   `};
 
   ${mediaQueries(40)`
-    top: 20%;
+    top: 16%;
     left: calc(6rem + 15vw);
   `};
 
