@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import Portrait from "../assets/img/profile-img.png";
+import Portrait from "../assets/img/profile-img-blurred-bg.png";
 import { mediaQueries } from "./Themes";
 
 const IntroBox = styled(motion.div)`
