@@ -18,7 +18,7 @@ const Box = styled(motion.div)`
   display: flex;
   height: 100vh;
   justify-content: center;
-  position: relative;
+  position: fixed;
   width: 100vw;
 
   ${mediaQueries(50)`
@@ -144,11 +144,11 @@ const MySkillsPage = () => {
           <PowerButton />
           <Main>
             <Title>
-              <Laptop width={40} height={40} /> Front-End Developer
+              <Laptop width={40} height={40} /> Front-end Developer
             </Title>
             <Description>
-              My motivation comes from creating visually appealing websites. It
-              is new technologies that drive me the most.
+              My motivation comes from creating visually appealing websites. I
+              am most driven by new technologies.
             </Description>
             <Description>
               <strong>Skills</strong>
