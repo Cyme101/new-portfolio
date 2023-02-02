@@ -88,8 +88,8 @@ const AboutMePage = () => {
             a passion for Front-end interfaces and it is where I like to
             challenge myself and create through code.
             <br /> <br />
-            I am currently learning PHP, WordPress, GSAP and advancing my
-            React.js knowledge.
+            I am currently enrolled in the web development program @ O'Sullivan
+            College in Quebec City.
             <br /> <br />
             I am also a cat mom.
             <br /> <br />
