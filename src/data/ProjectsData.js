@@ -13,7 +13,7 @@ export const Projects = [
       "rubyonrails",
       "postgreSQL",
     ],
-    demo: "https://seamify.herokuapp.com/",
+    demo: "https://seamify.ca/",
     github: "https://github.com/Cyme101/seamify",
   },
   {
