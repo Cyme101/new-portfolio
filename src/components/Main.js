@@ -12,7 +12,7 @@ const SocialIcons = lazy(() => import("./../subComponents/SocialIcons"));
 
 const MainContainer = styled(motion.div)`
   background: ${(props) => props.theme.body};
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   position: relative;
   width: 100vw;
