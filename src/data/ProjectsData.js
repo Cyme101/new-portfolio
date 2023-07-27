@@ -13,14 +13,14 @@ export const Projects = [
       "rubyonrails",
       "postgreSQL",
     ],
-    demo: "https://seamify.ca/",
+    demo: "https://seamify.herokuapp.com",
     github: "https://github.com/Cyme101/seamify",
   },
   {
     id: 2,
     name: "Zoo4U",
     description:
-      "This is the Airbnb clone team project @ Le Wagon, it has been built in 1 week.",
+      "This is the first project @ Le Wagon, it has been built in one week.",
     tags: [
       "ruby",
       "HTML",
