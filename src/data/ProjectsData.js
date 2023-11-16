@@ -1,40 +1,6 @@
 export const Projects = [
   {
     id: 1,
-    name: "Seamify",
-    description:
-      "This is the final team project @ Le Wagon, it has been built in 2 weeks.",
-    tags: [
-      "ruby",
-      "HTML",
-      "SCSS",
-      "javascript",
-      "boostrap",
-      "rubyonrails",
-      "postgreSQL",
-    ],
-    demo: "https://seamify.herokuapp.com",
-    github: "https://github.com/Cyme101/seamify",
-  },
-  {
-    id: 2,
-    name: "Zoo4U",
-    description:
-      "This is the first project @ Le Wagon, it has been built in one week.",
-    tags: [
-      "ruby",
-      "HTML",
-      "SCSS",
-      "javascript",
-      "boostrap",
-      "rubyonrails",
-      "postgreSQL",
-    ],
-    demo: "https://zoo4u.herokuapp.com",
-    github: "https://github.com/Cyme101/zoo4u",
-  },
-  {
-    id: 3,
     name: "The Famous Food App",
     description: "This is my first project with ReactJS with module CSS.",
     tags: ["reactjs", "redux", "CSS"],
@@ -42,7 +8,7 @@ export const Projects = [
     github: "https://github.com/Cyme101/the-famous-food-app",
   },
   {
-    id: 4,
+    id: 2,
     name: "tHE/vOID",
     description:
       "This is my E-Commerce project with ReactJS with styled-components.",
@@ -51,7 +17,7 @@ export const Projects = [
     github: "https://github.com/Cyme101/thevoid",
   },
   {
-    id: 5,
+    id: 3,
     name: "Google Home Page",
     description: "My Google home page clone.",
     tags: ["HTML", "CSS"],
