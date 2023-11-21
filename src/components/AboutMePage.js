@@ -25,7 +25,7 @@ const Main = styled(motion.div)`
   color: ${(props) => props.theme.text};
   display: flex;
   font-family: "Ubuntu Mono", sans-serif;
-  font-size: calc(0.6rem + 1vw);
+  font-size: calc(0.5rem + 1vw);
   height: 65vh;
   justify-content: center;
   left: calc(10rem + 5vw);
@@ -76,20 +76,21 @@ const AboutMePage = () => {
           <Main>
             Bonjour-Hi, I'm Isabelle Vallerand.
             <br /> <br />
-            A Front-end Developer based out of Mtl, Canada. I am from Quebec
-            city and moved to Montreal a few years ago. I come from a Fashion
-            Design background but I became interested in IT quickly. Over the
-            past 10 years, I've worked as a Support Analyst therefore
-            problem-solving skills is in my DNA. My career change last year led
-            me to learn how to code and I loved it.
+            I am a Web Developer based out of Quebec, Canada. I became
+            interested in IT world and over the past 10 years, I've worked as a
+            Support Analyst therefore problem-solving skills is in my DNA. My
+            career change in 2021 led me to learn how to code and I became
+            passionate about it.
             <br /> <br />
             I've enrolled in an intensive 9-weeks Full-Stack Web Development
             Bootcamp @ Le Wagon Montreal which I graduated in March 2022. I have
-            a passion for Front-end interfaces and it is where I like to
-            challenge myself and create through code.
+            a passion for the Front-End but I love what the backend offers in
+            terms of challenges.
             <br /> <br />
             I am currently enrolled in the web development program @ O'Sullivan
-            College in Quebec City.
+            College in Quebec City and in search of an internship that will
+            starts in January 2024. But really I'm looking for a full-time job
+            where I can continuously learn and grow.
             <br /> <br />
             I am also a cat mom.
             <br /> <br />
