@@ -8,7 +8,7 @@ export const Projects = [
     github: "https://gitfront.io/r/tr3ndyd3v/bMqwZHH9R73h/projet-photographe",
   },
   {
-    id: 1,
+    id: 2,
     name: "tHE/vOID",
     description:
       "This is my E-Commerce project with ReactJS with styled-components.",
@@ -17,7 +17,7 @@ export const Projects = [
     github: "https://github.com/Cyme101/thevoid",
   },
   {
-    id: 2,
+    id: 3,
     name: "Google Home Page",
     description: "My Google home page clone.",
     tags: ["HTML", "CSS"],
