@@ -2,7 +2,8 @@ import { lazy, Suspense, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import img from "../assets/img/logo.png";
+// import img from "../assets/img/logo.png";
+import logo from "../assets/svg/logo-branding.svg";
 import Intro from "./Intro";
 import Loading from "../subComponents/Loading";
 import { mediaQueries } from "./Themes";
@@ -62,7 +63,7 @@ const Center = styled.button`
 `;
 
 const LogoCenter = styled.img`
-  background-image: url({img});
+  background-image: url({logo});
   height: 50%;
   width: 50%;
 `;
@@ -176,7 +177,7 @@ const Main = () => {
               height={click ? 120 : 200}
               style={{ color: "inherit" }}
               img
-              src={img}
+              src={logo}
             />
             <span></span>
           </Center>

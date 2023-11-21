@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LogoSrc from "../assets/img/logo.png";
+import LogoSrc from "../assets/svg/logo-branding.svg";
 import { LightTheme } from "../components/Themes";
 
 export const Logo = styled.img`
