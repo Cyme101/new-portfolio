@@ -3,7 +3,7 @@ export const Projects = [
     id: 1,
     name: "Josephine Photographe",
     description: "First website project in my first semester in college.",
-    tage: ["html", "css", "js"],
+    tags: ["html", "css", "js"],
     demo: "https://projet-photographe.vercel.app",
     github: "https://gitfront.io/r/tr3ndyd3v/bMqwZHH9R73h/projet-photographe",
   },
