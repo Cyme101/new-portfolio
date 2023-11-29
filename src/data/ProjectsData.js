@@ -3,7 +3,7 @@ export const Projects = [
     id: 1,
     name: "World Time",
     description: "PHP project with API from the News API.",
-    tags: ["PHP", "json", "Bootstrap"],
+    tags: ["PHP", "json"],
     demo: "https://news.isabelle.dev",
     github: "https://gitfront.io/r/tr3ndyd3v/UDxZH9UWMMya/world-time",
   },
