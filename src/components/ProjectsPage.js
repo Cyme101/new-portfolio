@@ -6,7 +6,6 @@ import Loading from "../subComponents/Loading";
 import { Projects } from "../data/ProjectsData";
 import Card from "../subComponents/Card";
 import { Arrows } from "./AllSvgs";
-
 const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
 const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const HeadTitle = lazy(() => import("../subComponents/HeadTitle"));
@@ -93,16 +92,12 @@ const ProjectsPage = () => {
 
   useEffect(() => {
     const rotate = () => {
-      ref.current.style.transform = `translateX(${-window.pageYOffset}px)`;
+      ref.current.style.transform = `translateX(${-window.scrollY}px)`;
 
-      return (arrows.current.style.transform =
-        "rotate(" + -window.pageYOffset + "deg)");
+      arrows.current.style.transform = `rotate(${-window.scrollY}deg)`;
     };
 
     window.addEventListener("scroll", rotate);
-    return () => {
-      window.removeEventListener("scroll", rotate);
-    };
   });
 
   return (

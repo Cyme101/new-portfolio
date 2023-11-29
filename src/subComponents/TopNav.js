@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import PowerButton from "./PowerButton";
 
 const Box = styled.div`
   background: inherit;
@@ -10,11 +9,7 @@ const Box = styled.div`
 `;
 
 const TopNav = () => {
-  return (
-    <Box>
-      <PowerButton />
-    </Box>
-  );
+  return <Box></Box>;
 };
 
 export default TopNav;

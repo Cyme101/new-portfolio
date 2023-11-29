@@ -2,7 +2,6 @@ import { lazy, Suspense, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-// import img from "../assets/img/logo.png";
 import logo from "../assets/svg/logo-branding.svg";
 import Intro from "./Intro";
 import Loading from "../subComponents/Loading";
@@ -55,7 +54,7 @@ const Center = styled.button`
   position: absolute;
   top: ${(props) => (props.click ? "85%" : "50%")};
   transition: all 1s ease;
-  & > :last-child {
+  &:last-child {
     display: ${(props) => (props.click ? "none" : "inline-block")};
     padding-top: 1rem;
   }
@@ -67,6 +66,16 @@ const LogoCenter = styled.img`
   height: 50%;
   width: 50%;
 `;
+
+// const Home = styled(NavLink)`
+//   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
+//   cursor: pointer;
+//   position: absolute;
+//   text-decoration: none;
+//   top: 2rem;
+//   left: 45%;
+//   z-index: 1;
+// `;
 
 const Contact = styled.a`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
@@ -148,6 +157,7 @@ const Main = () => {
   const moveY = {
     y: "-100%",
   };
+
   const moveX = {
     x: `${path === "work" ? "100%" : "-100%"}`,
   };
@@ -164,12 +174,28 @@ const Main = () => {
       >
         <DarkDiv click={click} />
         <Container>
-          <PowerButton />
           {mq ? (
             <SocialIcons theme="light" />
           ) : (
             <SocialIcons theme={click ? "dark" : "light"} />
           )}
+          {/* <Home click={+false} onClick={() => setpath("home")} to="/">
+            <motion.h3
+              initial={{
+                y: -200,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              animate={{
+                y: 0,
+                transition: { type: "spring", duration: 1.5, delay: 1 },
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              HOME
+            </motion.h3>
+          </Home> */}
+          <PowerButton />
           <Center click={click}>
             <LogoCenter
               onClick={() => handleClick()}
