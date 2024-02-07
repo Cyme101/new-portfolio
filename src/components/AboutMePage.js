@@ -3,8 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { motion } from "framer-motion";
 import { DarkTheme, mediaQueries } from "./Themes";
 import Loading from "../subComponents/Loading";
-
-import LogoComponent from "../subComponents/LogoComponent";
+// import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 
@@ -70,7 +69,7 @@ const AboutMePage = () => {
     <ThemeProvider theme={DarkTheme}>
       <Suspense fallback={<Loading />}>
         <Box>
-          <LogoComponent theme="dark" />
+          {/* <LogoComponent theme="dark" /> */}
           <SocialIcons theme="dark" />
           <PowerButton />
           <Main>
